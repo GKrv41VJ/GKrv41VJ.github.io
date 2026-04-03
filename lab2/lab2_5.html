@@ -8,82 +8,83 @@
 <body>
     <h1>Форма регистрации пользователя</h1>
     <form method="post">
-        <p>
-            <label>E-mail</label>
-            <input type="email" name="E-mail" placeholder="Введите e-mail" required style="position:absolute; left:5%;" size="20">
-        </p>
-        <p>
-            <label>Пароль</label>
-            <input type="password" name="Password" placeholder="Введите пароль" required style="position:absolute; left:5%;" size="20">
-        </p>
-        <p>
-            <label>Пол</label>
-            <label for="Mn">
-                <input type="radio" name="Sex" id="Mn">
-                Мужчина
-            </label>
-            <label for="Wmn">
-                <input type="radio" name="Sex" id="Wmn">
-                Женщина
-            </label>
-        </p>
-        <p>
-            <label>Год рождения</label>
-            <select>
-                <option>2008</option>
-                <option>2007</option>
-                <option>2006</option>
-                <option>2005</option>
-                <option>2004</option>
-                <option>2003</option>
-                <option>2002</option>
-                <option>2001</option>
-                <option>2000</option>
-                <option>В прошлом тысячелетии</option>
-            </select>
-        </p>
         <table>
-            <tbody>
-                <tr>
-                    <td rowspan="6">
-                        Я знаю
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" id="Russian" checked disabled>
-                        <label for="Russian">Русский</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" id="Spn">
-                        <label for="Spn">Испанский</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" id="Deu">
-                        <label for="Deu">Немецкий</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" id="Eng">
-                        <label for="Eng">Английский</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" id="Chn">
-                        <label for="Chn">Китайский</label>
-                    </td>
-                </tr>
+        <tr>
+            <td><label>E-mail</label></td>
+            <td>
+                <input type="email" name="E-mail" placeholder="Введите e-mail" required size="20">
+            </td>
+        </tr>
+        <tr>
+            <td><label>Пароль</label></td>
+            <td>
+                <input type="password" name="Password" placeholder="Введите пароль" required size="20">
+            </td>
+        </tr>
+        <tr>
+            <td><label>Пол</label></td>
+            <td>
+                <label for="Mn">
+                    <input type="radio" name="Sex" id="Mn"> Мужчина
+                </label>
+                <label for="Wmn">
+                    <input type="radio" name="Sex" id="Wmn"> Женщина
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Год рождения</label></td>
+            <td>
+                <select>
+                    <option>2008</option>
+                    <option>2007</option>
+                    <option>2006</option>
+                    <option>2005</option>
+                    <option>2004</option>
+                    <option>2003</option>
+                    <option>2002</option>
+                    <option>2001</option>
+                    <option>2000</option>
+                    <option>В прошлом тысячелетии</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+                <td rowspan="5">Я знаю</td>
+                <td>
+                    <input type="checkbox" id="Russian" checked disabled>
+                    <label for="Russian">Русский</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="Spn">
+                    <label for="Spn">Испанский</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="Deu">
+                    <label for="Deu">Немецкий</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="Eng">
+                    <label for="Eng">Английский</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="Chn">
+                    <label for="Chn">Китайский</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Mememe">Обо мне:</label></td>
+                <td> <textarea id="Mememe" placeholder="Напишите коротко о себе"></textarea></td>
+            </tr>
         </table>
-        <p>
-            <label for="Mememe">Обо мне:</label>
-            <textarea id="Mememe" placeholder="Напишите коротко о себе"></textarea>
-        </p>
         <p>
             <button type="submit">Готово</button><button type="reset">Очистить</button>
         </p>
