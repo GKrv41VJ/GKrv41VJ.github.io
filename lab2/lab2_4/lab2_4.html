@@ -36,21 +36,27 @@
    Используйте код для вставки, доступный в пункте Поделиться меню карты. 
 4. Добавьте подпись к карте
  -->
-<figure>
-    <iframe 
-        src="https://vkvideo.ru/video_ext.php?oid=-202869502&id=456239024&hash=cafa05853fdb5f18&hd=2" 
-        width="853" 
-        height="480" 
-        allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"  
-        allowfullscreen>
-    </iframe>
-    <figcaption>Можарова на фоне ёлки</figcaption>
-</figure>
-<figure>
-	<script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7df189e46d27932c6c9d16b07f87e948e089986b377bdba65c4e9c1964162a6a&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true">
-	</script>
-	<figcaption>ОГУ находится здесь</figcaption>
-</figure>
+	<figure>
+		<iframe src="https://vkvideo.ru/video_ext.php?oid=-202869502&id=456239024&hash=cafa05853fdb5f18&hd=2"
+			width="853" height="480"
+			allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" allowfullscreen>
+		</iframe>
+		<figcaption>Можарова на фоне ёлки</figcaption>
+	</figure>
+	<figure>
+		<a href="https://yandex.ru/maps/org/orlovskiy_gosudarstvenny_universitet_imeni_i_s_turgeneva/1030860442/?utm_medium=mapframe&utm_source=maps"
+			style="color:#eee;font-size:12px;position:absolute;top:0px;">Орловский государственный университет имени
+			И.С. Тургенева
+		</a>
+		<a href="https://yandex.ru/maps/10/orel/category/university/184106140/?utm_medium=mapframe&utm_source=maps"
+			style="color:#eee;font-size:12px;position:absolute;top:14px;">ВУЗ в Орле
+		</a>
+		<iframe
+			src="https://yandex.ru/map-widget/v1/org/orlovskiy_gosudarstvenny_universitet_imeni_i_s_turgeneva/1030860442/?from=api-maps&ll=36.063909%2C52.951255&utm_source=share&z=17"
+			width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;">
+		</iframe>
+		<figcaption>Можарова на фоне ёлки</figcaption>
+	</figure>
 
 	<h2>Демонстрация добавления на страницу видео</h2>
 	<!-- 
@@ -58,10 +64,10 @@
 2. С помощью элемента video добавьте на страницу  видеоплеер с элементами управления, который воспроизводит скачанное видео.
 3. Добавьте к видео обложку (последний кадр видео).
  -->
-<video width="853" height="480" controls poster="video_preview.png">
-  <source src="oreluniver.mp4" type="video/mp4">
-Тег Video не поддерживается.
-</video>
+	<video width="853" height="480" controls poster="video_preview.png">
+		<source src="oreluniver.mp4" type="video/mp4">
+		Тег Video не поддерживается.
+	</video>
 
 	<h2>Демонстрация добавления на страницу аудио</h2>
 	<!-- 
@@ -69,11 +75,11 @@
  2. С помощью элемента audio добавьте на страницу  аудиоплеер с элементами управления, который воспроизводит скачанные аудио
  3. Используйте тег <source> для добавления нескольких форматов одного и того же файла на случай, если какой-то из них не будет поддерживаться браузером
   -->
-<audio controls>
- <source src="yuriy-gagarin-poehali.mp3" type="audio/mp3">
- <source src="yuriy-gagarin-poehali.ogg" type="audio/ogg">
- Аудио не поддерживается.
-</audio>
+	<audio controls>
+		<source src="yuriy-gagarin-poehali.mp3" type="audio/mp3">
+		<source src="yuriy-gagarin-poehali.ogg" type="audio/ogg">
+		Аудио не поддерживается.
+	</audio>
 
 	<h2>Демонстрация добавления PDF на страницу</h2>
 	<!-- 
@@ -83,10 +89,11 @@
 	когда браузер не может отобразить файл (например, на мобильных устройствах или если отключены плагины).
  -->
 
-<object width="853" height="480" data="oreluniver.pdf">
-	PDF-презентация доступна <a href="https://oreluniver.ru/public/file/brendbook/Oreluniver_BrandBook_20190412.pdf" target="blank">на сайте ОГУ.</a>
-</object>
- 
+	<object width="853" height="480" data="oreluniver.pdf">
+		PDF-презентация доступна <a href="https://oreluniver.ru/public/file/brendbook/Oreluniver_BrandBook_20190412.pdf"
+			target="blank">на сайте ОГУ.</a>
+	</object>
+
 </body>
 
 </html>

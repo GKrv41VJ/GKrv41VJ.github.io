@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Форма</title>
 </head>
+
 <body>
     <h1>Форма регистрации пользователя</h1>
     <form method="post">
         <table>
-        <tr>
-            <td><label>E-mail</label></td>
-            <td>
-                <input type="email" name="E-mail" placeholder="Введите e-mail" required size="20">
-            </td>
-        </tr>
-        <tr>
-            <td><label>Пароль</label></td>
-            <td>
-                <input type="password" name="Password" placeholder="Введите пароль" required size="20">
-            </td>
-        </tr>
-        <tr>
-            <td><label>Пол</label></td>
-            <td>
-                <label for="Mn">
-                    <input type="radio" name="Sex" id="Mn"> Мужчина
-                </label>
-                <label for="Wmn">
-                    <input type="radio" name="Sex" id="Wmn"> Женщина
-                </label>
-            </td>
-        </tr>
-        <tr>
-            <td><label>Год рождения</label></td>
-            <td>
-                <select>
-                    <option>2008</option>
-                    <option>2007</option>
-                    <option>2006</option>
-                    <option>2005</option>
-                    <option>2004</option>
-                    <option>2003</option>
-                    <option>2002</option>
-                    <option>2001</option>
-                    <option>2000</option>
-                    <option>В прошлом тысячелетии</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
+            <tr>
+                <td><label>E-mail</label></td>
+                <td>
+                    <input type="email" name="E-mail" placeholder="Введите e-mail" required size="20">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Пароль</label></td>
+                <td>
+                    <input type="password" name="Password" placeholder="Введите пароль" required size="20">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Пол</label></td>
+                <td>
+                    <label for="Mn">
+                        <input type="radio" name="Sex" id="Mn"> Мужчина
+                    </label>
+                    <label for="Wmn">
+                        <input type="radio" name="Sex" id="Wmn"> Женщина
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Год рождения</label></td>
+                <td>
+                    <select>
+                        <option>2008</option>
+                        <option>2007</option>
+                        <option>2006</option>
+                        <option>2005</option>
+                        <option>2004</option>
+                        <option>2003</option>
+                        <option>2002</option>
+                        <option>2001</option>
+                        <option>2000</option>
+                        <option>В прошлом тысячелетии</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
                 <td rowspan="5">Я знаю</td>
                 <td>
                     <input type="checkbox" id="Russian" checked disabled>
@@ -90,4 +92,5 @@
         </p>
     </form>
 </body>
+
 </html>
