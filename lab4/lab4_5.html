@@ -12,31 +12,50 @@
 
         .menu {
             width: 300px;
-            background: #ffefc4;
+            background: rgb(255, 224, 193);
         }
 
         .menu ul {
             list-style: none;
-            padding-left: 20px;
-        }
-
-        .menu li a::before {
-            display: inline-block;
-            font-family: 'Font Awesome 6 Free';
-            font-size: 16px;
-            width: 16px;
-            margin-right: 5px;
+            padding-left: 0;
         }
 
         .menu li {
             color: rgb(70, 80, 40);
+            position: relative;
         }
 
         .menu li ul {
-            padding-bottom: 20px;
+            display: none;
+            left: 40px;
+            background: #ffefc4;
+            min-width: 200px;
+        }
+
+        .menu li:hover ul {
+            display: block;
+            padding: 0 15px;
+        }
+
+        .menu li a {
+            display: block;
+            padding: 8px 15px;
+            color: inherit;
+
         }
 
         .menu li a::before {
+            font-family: 'Font Awesome 6 Free';
+            font-size: 16px;
+            width: 20px;
+            display: inline-block;
+        }
+
+        .menu li a::before {
+            content: "\f0fe";
+        }
+
+        .menu>ul>li>a:hover::before {
             content: "\f147";
         }
 
