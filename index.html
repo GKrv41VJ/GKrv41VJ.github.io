@@ -16,10 +16,11 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
         }
 
-        .wrapper {
+        .container {
+            margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            max-width: 940px;
+            grid-template-columns: repeat(auto-fit, minmax(calc(450px), 1fr));
+            max-width: 1440px;
             gap: 20px;
         }
     </style>
@@ -28,7 +29,7 @@
 <body>
     <h1>Лабораторные работы</h1 >
     <hr>
-    <div class="wrapper">
+    <div class="container">
         <article>
             <h2>Лабораторная работа 1</h2>
             <ol>
